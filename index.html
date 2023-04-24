@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">David</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>David Rojas</h1>
+            <h2>Software engineer</h2>
+            <div class="redes">
+                <a href="mailto:xddavidxd2001@gmail.com"><i class="fa-brands fa-google"></i></a>
+                <a href="https://wa.link/utsc93" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/DavidRedz10" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/davidredz10/" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hi, I´m David.</span> I am a Software Engineering student with experience in developing progressive apps using Ionic. My knowledge in Angular, HTML, Typescript and CSS has allowed me to integrate technologies to create efficient and highly functional mobile applications. In addition, I hold a Cisco R&S CCNA certification from Cisco, which demonstrates my ability to configure and maintain secure and reliable communication networks. I am committed to continue learning and applying new technologies to create innovative solutions in the field of software development.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+              <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Games</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>Basketball</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>Motorcycles</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Photography</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <button>
+                <a href="David Rojas 1000992450 CV.pdf" download="Mi_CV.pdf">
+                  Descargar CV <i class="fa-solid fa-download"></i>
+                  <span class="overlay"></span>
+                </a>
+              </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Next.js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Android Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Software Engineering</h4>
+                        <span class="casa">Universidad Manuela Beltran</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Currently, I am in my 10th semester of engineering and have gained knowledge in front-end and mobile development, as well as experience in networking. Through my projects, I have worked with front-end technologies such as HTML, CSS, JavaScript and frameworks such as React and Angular to create highly functional and aesthetically appealing user interfaces. I've also had the opportunity to work on configuring communication networks, learning about routing, security protocols, and real-time troubleshooting. I am excited to continue learning and applying my skills to create innovative solutions in the field of software engineering.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Infrastructure in Google Cloud</h4>
+                        <span class="casa">Google</span>
+                        <span class="fecha">2021</span>
+                        <p>As someone with little experience in cloud computing, I decided to take the Google Cloud Computing Foundations courses. The series of courses provided me with an overview of concepts central to cloud basics, big data, and machine learning, and where and how Google Cloud fits in.
+
+                            After completing the courses, I was able to better articulate these concepts and demonstrate some hands-on skills in using Google Cloud tools.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CCNA: Enterprise Networking, Security, and Automation</h4>
+                        <span class="casa">Cisco</span>
+                        <span class="fecha">2022</span>
+                        <p>Cisco verified that I completed the Enterprise Networking, Security and Automation course and achieved this student level credential. I have a foundation in scalable network architectures, dynamic routing, mitigation of security threats, wide-area networks, virtualization, automation of programmable networks. I participated in up to 41 lab activities and accumulated up to 15 hours of hands-on labs using Cisco hardware and/or Cisco Packet Tracer tool.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work experience</h3>
+                    <div class="item der">
+                        <h4>Customer service associate</h4>
+                        <span class="casa">Foundever</span>
+                        <span class="fecha">2020-2022</span>
+                        <p>I worked as a Customer Care Representative for a digital wallet and mobile payment software in the United States. My top strength was in providing excellent client service and support. I was skilled at producing effective solutions to address client inquiries and concerns, and ensuring their overall satisfaction with our product.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>CX Specialist</h4>
+                        <span class="casa">Ontop</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>My role was to onboard customers to the Ontop payment experience and serve as their primary point of contact for any inquiries regarding their contracts. I was responsible for ensuring a seamless and positive experience for customers as they began using our payment platform. Additionally, I was available to assist customers with any questions or concerns they may have had throughout their contract period.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Help Desk</h4>
+                        <span class="casa">Lean-tech</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>In my current role, I use JIRA, Zendesk, and MongoDB to monitor the issue resolution, feature requests, and enhancements of a U.S. logistics platform. These tools allow me to effectively track and manage tasks related to the development and maintenance of the platform, ensuring that issues are addressed in a timely and efficient manner. By using these technologies, I am able to provide high-quality support to our users and maintain the overall functionality and performance of the logistics platform.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/DavidRedz10/Seguridad_Sql">Sitio Web</a>
+                        <h3>Android Apps</h3>
+                        <p>SQlite</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://in-mobile.vercel.app/">Sitio Web</a>
+                        <h3>Inteligencia Artificial</h3>
+                        <p>Real estate</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://cerulean-held-soul.glitch.me/">Sitio Web</a>
+                        <h3>Diseño Creativo</h3>
+                        <p>Realidad virtual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="contenido-banner">
+            <div class="redes">
+                <a href="mailto:xddavidxd2001@gmail.com"><i class="fa-brands fa-google"></i></a>
+                <a href="https://wa.link/utsc93" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/DavidRedz10" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/davidredz10/" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
